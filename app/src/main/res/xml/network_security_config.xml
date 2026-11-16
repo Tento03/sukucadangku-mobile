@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Network Security Configuration for SukuCadangku.
+
+  - Debug / Staging: cleartext (HTTP) is allowed for localhost and the
+    standard Android emulator host (10.0.2.2) so developers can point the app
+    at a local backend without TLS.
+  - Release / Production: only HTTPS is allowed (default Android 9+ behaviour
+    is preserved; this config simply makes it explicit).
+-->
+<network-security-config>
+
+    <!-- ================================================================== -->
+    <!-- Debug / Staging overrides                                           -->
+    <!-- ================================================================== -->
+    <domain-config cleartextTrafficPermitted="true">
+        <!-- Local development machine -->
+        <domain includeSubdomains="true">localhost</domain>
+        <!-- Android emulator → host machine -->
+        <domain includeSubdomains="false">10.0.2.2</domain>
+        <!-- Generic LAN / staging IP range (adjust if needed) -->
+        <domain includeSubdomains="false">192.168.1.1</domain>
+    </domain-config>
+
+    <!-- ================================================================== -->
+    <!-- Production / global baseline — HTTPS only                          -->
+    <!-- ================================================================== -->
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <!-- Trust the system CA store (default) -->
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+
+</network-security-config>

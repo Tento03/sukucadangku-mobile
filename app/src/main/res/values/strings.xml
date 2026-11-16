@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SukuCadangku</string>
+    <string name="file_provider_authority" translatable="false">com.sukucadangku.mobile.fileprovider</string>
+
+    <!-- General / Loading -->
+    <string name="loading_message">Memuat SukuCadangku…</string>
+
+    <!-- Error strings -->
+    <string name="error_title">Koneksi Terputus</string>
+    <string name="error_message">Tidak dapat terhubung ke server. Periksa koneksi internet Anda dan coba lagi.</string>
+    <string name="error_no_internet">Tidak ada koneksi internet. Periksa koneksi Anda dan coba lagi.</string>
+    <string name="error_page_load">Gagal memuat halaman. Silakan coba lagi.</string>
+
+    <!-- Buttons -->
+    <string name="btn_retry">Coba Lagi</string>
+    <string name="btn_refresh">Refresh</string>
+    <string name="btn_back">Kembali</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_yes">Ya</string>
+    <string name="btn_no">Tidak</string>
+    <string name="btn_cancel">Batal</string>
+    <string name="btn_open_settings">Buka Pengaturan</string>
+    <string name="btn_grant_permission">Izinkan</string>
+
+    <!-- Dialogs -->
+    <string name="dialog_title_alert">Pemberitahuan</string>
+    <string name="dialog_title_confirm">Konfirmasi</string>
+    <string name="dialog_title_prompt">Masukkan Data</string>
+
+    <!-- Permission strings -->
+    <string name="permission_camera_title">Izin Kamera Diperlukan</string>
+    <string name="permission_camera_rationale">Aplikasi membutuhkan akses kamera untuk mengambil foto produk dan barcode.</string>
+    <string name="permission_camera_description">Izinkan kamera agar dapat mengambil foto langsung untuk pencarian suku cadang atau profil.</string>
+
+    <string name="permission_storage_title">Izin Penyimpanan Diperlukan</string>
+    <string name="permission_storage_rationale">Aplikasi membutuhkan akses penyimpanan untuk mengunduh QR pembayaran dan berkas invoice.</string>
+    <string name="permission_storage_description">Izinkan penyimpanan untuk menyimpan gambar QRIS, bukti transfer, dan berkas pesanan.</string>
+
+    <string name="permission_location_rationale">Aplikasi membutuhkan akses lokasi untuk menemukan toko terdekat.</string>
+    <string name="permission_notification_rationale">Aktifkan notifikasi untuk mendapatkan info terbaru tentang pesanan Anda.</string>
+
+    <!-- File chooser -->
+    <string name="choose_source">Pilih Sumber Berkas</string>
+    <string name="take_photo">Ambil Foto</string>
+    <string name="choose_gallery">Pilih dari Galeri</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Beranda</string>
+    <string name="nav_catalog">Katalog</string>
+    <string name="nav_cart">Keranjang</string>
+    <string name="nav_order">Pesanan</string>
+    <string name="nav_profile">Profil</string>
+</resources>
